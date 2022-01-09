@@ -1,0 +1,10 @@
+{
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github-enterprise.uri": "https://github.com/vixfloinvest",
+    "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    }
+
+}
