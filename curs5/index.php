@@ -1,4 +1,7 @@
 <?php
+/*
+Exercitii din cursul 5 - Siruri
+*/ 
 
 $status="test";
 
@@ -36,8 +39,8 @@ if ($status === "admin") {
         echo "Number" . ": " . $num . "<br>";
     }
 }
-
-
+  
+// Se afiseaza Number: 012 *** *65
 
 
 
