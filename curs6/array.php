@@ -11,8 +11,8 @@ echo 'Recapitulare array';
 $a = array(1,2,3,4,5,6,7,8,9);
 reset($a);
 key($a);
-//echo next(next(prev(next($a))));  # afiseaza eroare
-echo key($a);
+//echo next(next(prev(next($a))));  // se afiseaza eroare
+echo key($a);   // se afiseaza 0
 ?>
 <h2>3. Ce afiseaza urmatorul script?</h2>
 <?php
@@ -23,15 +23,33 @@ prev($a);
 next($a);
 echo next($a);
 echo key($a);
+  // se afiseaza 32
 ?>
 
 <h2>4. Ce afiseaza urmatorul script ? </h2>
 <?php
 $masini = array("Volvo","BMW","Toyota","DACIA","AUDI");
-rsort($masini);
-print_r($masini);
-
+sort($masini);
+print_r($masini); 
+// Se afiseaza: Array ( [0] => AUDI [1] => BMW [2] => DACIA [3] => Toyota [4] => Volvo )
  ?>
+
+<h2>5. Ce afiseaza urmatorul script ? </h2>
+<?php
+$masini = array("Volvo","BMW","Toyota","DACIA","AUDI");
+asort($masini);
+print_r($masini); 
+// Se afiseaza: Array ( [4] => AUDI [1] => BMW [3] => DACIA [2] => Toyota [0] => Volvo )
+ ?>
+
+<h2>6. Ce afiseaza urmatorul script ? </h2>
+<?php
+$masini = array("Volvo","BMW","Toyota","DACIA","AUDI");
+rsort($masini);
+print_r($masini); 
+// Se afiseaza: Array ( [0] => Volvo [1] => Toyota [2] => DACIA [3] => BMW [4] => AUDI )
+ ?>
+
 <h2>7. Ce afiseaza urmatorul script?</h2>
 <?php
 
@@ -45,6 +63,7 @@ function dupa_lungime($e1, $e2){
 
 //echo "<pre>";
 print_r($cumparaturi);
+// Se afiseaza: Array ( [2] => oua [1] => paine [3] => lapte [4] => masline [5] => cadouri )
 ?>
 
 <h2>8. Ce afiseaza urmatorul script?</h2>
