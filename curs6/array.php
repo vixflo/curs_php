@@ -1,4 +1,9 @@
 <?php
+
+/*
+Cursuri clasa
+*/
+
 echo 'Recapitulare array';
 ?>
 <h2>2. Ce afiseaza urmatorul script?</h2>
@@ -6,7 +11,7 @@ echo 'Recapitulare array';
 $a = array(1,2,3,4,5,6,7,8,9);
 reset($a);
 key($a);
-//echo next(next(prev(next($a))));
+//echo next(next(prev(next($a))));  # afiseaza eroare
 echo key($a);
 ?>
 <h2>3. Ce afiseaza urmatorul script?</h2>
@@ -19,6 +24,7 @@ next($a);
 echo next($a);
 echo key($a);
 ?>
+
 <h2>4. Ce afiseaza urmatorul script ? </h2>
 <?php
 $masini = array("Volvo","BMW","Toyota","DACIA","AUDI");
