@@ -5,6 +5,8 @@
     "github-enterprise.uri": "https://github.com/vixfloinvest",
     "[php]": {
       "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    }
+    },
+    "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange"
 
 }
