@@ -11,7 +11,7 @@
     <body>
 <?php
 include_once("connect.php");
-$sql = "SELECT id, prenume, nume , email, data_nastere, sex, telefon,poza, data_adaugare FROM utilizatori";
+$sql = "SELECT id, prenume, nume , email, datanastere, sex, telefon,poza, data_adaugare FROM utilizatori";
 $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) :?>
         <div class="container py-3">
