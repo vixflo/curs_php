@@ -1,0 +1,2 @@
+insert into utilizatori(id,nume,prenume,email,parola,datanastere,sex,telefon,poza,data_adaugare) values('1','Georgescu','Alex','gigi@user.com','a172ffc990129fe6f68b50f6037c54a1894ee3fd','1979-01-25','m','0732223456','user.png','2022-01-15 20:16:20');
+insert into utilizatori(id,nume,prenume,email,parola,datanastere,sex,telefon,poza,data_adaugare) values('2','Popescu','Ioana','popescu.i@email.ro','00aaac5465fa35104efc7ba763cbef4d485d8aad','2001-06-19','f','0732423458','female-user.png','2022-01-16 13:35:55');

@@ -94,10 +94,10 @@ else{
     $mess_error.='Telefonul nu a fost introdus!'."<br />";
 }
 
-
+// cod PHP pentru adaugarea imaginilor
 if(isset($_FILES['poza']) && $_FILES['poza']['size']>0)
 {
-  $path = "uploads/";
+  $path = "uploads/"; // afisam calea 
   $poza = basename( $_FILES['poza']['name']);
   $path = $path . $poza;
   $check = getimagesize($_FILES["poza"]["tmp_name"]);
@@ -122,7 +122,7 @@ if(isset($_FILES['poza']) && $_FILES['poza']['size']>0)
     }
     else{
         //salvare date
-        $sql = "INSERT INTO utilizatori (prenume, nume, email, parola, data_nastere, sex, telefon, poza)
+        $sql = "INSERT INTO utilizatori (prenume, nume, email, parola, datanastere, sex, telefon, poza)
         VALUES ('".$prenume."', '".$nume."', '".$email."', '".$parola."', '".$datanastere."', '".$sex."', '".$telefon."', '".$poza."')";
         if (mysqli_query($con, $sql)) {
             $mesaj_success = "Datele au fost introduse cu succes!";

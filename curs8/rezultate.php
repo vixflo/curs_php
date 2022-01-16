@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) :?>
                         <td><?php echo htmlentities($row["prenume"]);?></td>
                         <td><?php echo htmlentities($row["nume"]);?></td>
                         <td><?php echo htmlentities($row["email"]);?></td>
-                        <td><?php echo htmlentities($row["data_nastere"]);?></td>
+                        <td><?php echo htmlentities($row["datanastere"]);?></td>
                         <td><?php echo htmlentities($row["sex"]);?></td>
                         <td><?php echo htmlentities($row["telefon"]);?></td>
                         <td>
