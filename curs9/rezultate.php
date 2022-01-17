@@ -1,13 +1,14 @@
 <?php
 include_once("connect.php");
 if(isset($_POST['email']) && !empty($_POST['email'])){
-     echo $sql = "SELECT id, prenume, nume , email,data_nastere, sex, telefon
+    $sql = "SELECT id, prenume, nume , email,datanastere, sex, telefon
             FROM utilizatori WHERE email = '".mysqli_real_escape_string($con,$_POST['email'])."' and parola ='".sha1($_POST['parola'])."'";
     $result = mysqli_query($con, $sql);
     if(isset($result) && !empty($result)){
         $row = mysqli_fetch_assoc($result);
         
         if(isset($row)){
+            // print_r($row);
             echo "Salut $row[prenume]. Logarea s-a efectuat cu succes";
         }
         else{
@@ -25,7 +26,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
 else{
 
 
-    $sql = "SELECT id, prenume, nume , email,data_nastere, sex, telefon FROM utilizatori";
+    $sql = "SELECT id, prenume, nume , email,datanastere, sex, telefon FROM utilizatori";
     $result = mysqli_query($con, $sql);
 
     if (mysqli_num_rows($result) > 0) :?>
@@ -48,7 +49,7 @@ else{
                 <td><?php echo htmlentities($row["prenume"]);?></td>
                 <td><?php echo htmlentities($row["nume"]);?></td>
                 <td><?php echo htmlentities($row["email"]);?></td>
-                <td><?php echo htmlentities($row["data_nastere"]);?></td>
+                <td><?php echo htmlentities($row["datanastere"]);?></td>
                 <td><?php echo htmlentities($row["sex"]);?></td>
                 <td><?php echo htmlentities($row["telefon"]);?></td>
             </tr>

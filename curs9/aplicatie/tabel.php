@@ -6,16 +6,16 @@
     <h1 class='h1'>
 Lista masini
     </h1>
-<?php //include_once ( 'array.php');?>
+<?php // include_once ( 'array.php');?>
 <?php include_once('connect.php');?>
 <?php
-$sql = "SELECT * FROM masini  WHERE an >='2017'";
+$sql = "SELECT * FROM masini  WHERE an >='2013'";
 $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) :?>
 
-<table class="table table-bordered table-dark">
-  <thead>
-    <tr>
+<table class="table table-striped table-dark">
+  <thead class="thead-dark">
+    <tr class="bg-danger">
       <th scope="col">Nume</th>
       <th scope="col">Model</th>
       <th scope="col">Pret</th>
@@ -26,15 +26,16 @@ if (mysqli_num_rows($result) > 0) :?>
     </tr>
   </thead>
   <tbody>
+  
   <?php while($masina = mysqli_fetch_assoc($result)):?>
         <?php if ($masina['an'] >=2000):?>
-    <tr>
+    <tr class="bg-danger text-warning">
       <th scope="row"> <?php echo ucfirst($masina['nume']);?></th>
       <td><?php echo ucfirst($masina['model']);?></td>
       <td><?php echo $masina['pret'];?></td>
       <td><?php echo $masina['an'];?></td>
       <td><?php echo $masina['culoare'];?></td>
-      <td> <img  style="max-width:80px;" src="<?php echo $masina['poza'];?>" alt=" poza">  </td>
+      <td> <img  style="max-width:60px;" src="img/<?php echo $masina['poza'];?>" alt=" poza">  </td>
       <td><?php echo $masina['dataadaugare'];?></td>
     </tr>
     <?php endif;?>

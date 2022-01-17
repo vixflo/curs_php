@@ -1,3 +1,12 @@
+<?php
+// error_reporting(-1); // -1 pentru a afisa toate erorile
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+  $length = 32;
+  $_SESSION['token'] = substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $length);
+  $hash = $_SESSION['token'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include_once 'head.php';?>
@@ -5,7 +14,7 @@
 <div class="container">
  <h1 class="h1"> Formular adaugare masini</h1>
 
- <form action="" method ="post" >
+ <form action="post.php" method ="post" enctype="multipart/form-data" >
   <div class="form-group">
     <label for="nume">Nume</label>
     <input type="text" class="form-control" id="nume">
@@ -30,7 +39,7 @@
     <label for="poza">Poza</label>
     <input type="file" class="form-control" id="poza">
   </div>
-  
+  <input type="hidden" name="hash" value="<?php echo $hash; ?>">
   <button type="submit" class="btn btn-primary">Salveaza masina</button>
 </form>
 </div>
