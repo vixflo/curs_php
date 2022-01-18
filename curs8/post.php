@@ -83,7 +83,7 @@ if(isset($_POST['sex']) && !empty($_POST['sex'])){
         $error = true;
         $mess_error.='Valoarea introdusa nu este corecta!'."<br />";
     }
-}
+} 
 else{
     $error = true;
     $mess_error.='Sex nu a fost introdus!'."<br />";

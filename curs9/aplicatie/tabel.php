@@ -3,15 +3,14 @@
 <?php include_once('head.php');?>
 <body>
 <div class="container">
-    <h1 class='h1'>
-Lista masini
-    </h1>
+    <h1 class='h1'>Lista masini </h1>
 <?php // include_once ( 'array.php');?>
 <?php include_once('connect.php');?>
 <?php
 $sql = "SELECT * FROM masini  WHERE an >='2013'";
 $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) :?>
+
 
 <table class="table table-striped table-dark">
   <thead class="thead-dark">
