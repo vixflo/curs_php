@@ -52,4 +52,4 @@ Tutorial cu scripturi, explicații, exemple și aplicații în PHP pentru încep
 - [XAMPP pentru Windows, Linux și macOS ](https://www.apachefriends.org/index.html)
 
 ---
-2021 Cursuri PHP
+ Cursuri PHP ***  2021 - 2022
