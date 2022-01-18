@@ -23,7 +23,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <body>
 
   <div class="container py-4">
-    <?php //include('meniu.php');
+    <?php //include('meniu.html');
     ?>
     <div class="card bg-light">
       <article class="card-body mx-auto" style="max-width: 600px;">

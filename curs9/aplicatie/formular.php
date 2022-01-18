@@ -9,7 +9,7 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once 'head.php'; ?>
+<?php include_once 'head.html'; ?>
 
 <body>
   <div class="container">

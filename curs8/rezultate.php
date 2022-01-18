@@ -15,7 +15,7 @@ $sql = "SELECT id, prenume, nume , email, datanastere, sex, telefon,poza, data_a
 $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) :?>
         <div class="container py-3">
-<?php //include('meniu.php');?>
+<?php //include('meniu.html');?>
             <h2>Rezultatele din baza de date sunt:</h2>    
             <table class="table table-hover">
                 <thead>

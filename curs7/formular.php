@@ -1,3 +1,13 @@
+<?php
+// error_reporting(0); // -1 pentru a afisa toate erorile
+// if (session_status() == PHP_SESSION_NONE) {
+//   session_start();
+//   $length = 32;
+//   $_SESSION['token'] = substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $length);
+//   $hash = $_SESSION['token'];
+// }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
