@@ -20,18 +20,18 @@ if (isset($_GET['criteria'])) {
             while ($row = mysqli_fetch_assoc($result)) {
                 // returnam rezultatele true
 ?>
-    <!-- Afisam continut HTML in afara codului PHP -->
-    <div id="result">
-        <!-- Afisam imaginea utilizatorului -->
-        <img src="img/user.png">
-        <!-- Afisam numele si prenumele utilizatorului -->
-        <p><b>Name: </b> <?php echo $row['fname'] . " " . $row['lname']; ?> </p>
-        <!-- Afisam nr. de telefon a utilizatorului -->
-        <p><b>Tel: </b> <?php echo $row['tel']; ?> </p>
-    </div>
-    <!-- Revenim la codul PHP -->
+                <!-- Afisam continut HTML in afara codului PHP -->
+                <div id="result">
+                    <!-- Afisam imaginea utilizatorului -->
+                    <img src="img/user.png">
+                    <!-- Afisam numele si prenumele utilizatorului -->
+                    <p><b>Name: </b> <?php echo $row['fname'] . " " . $row['lname']; ?> </p>
+                    <!-- Afisam nr. de telefon a utilizatorului -->
+                    <p><b>Tel: </b> <?php echo $row['tel']; ?> </p>
+                </div>
+                <!-- Revenim la codul PHP -->
 <?php
-        }
+            }
             // afisam contorul pentru rezultatele optinute
             echo "Number of results: " . mysqli_num_rows($result);
         } else {
