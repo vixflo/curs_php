@@ -1,12 +1,13 @@
 {
     "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": null
     },
     "github-enterprise.uri": "https://github.com/vixfloinvest",
     "[php]": {
       "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
     "editor.wordWrap": "on",
-    "files.autoSave": "onFocusChange"
-
+    "files.autoSave": "onFocusChange",  
+    "phpfmt.php_bin": "C:\\xampp\\php\\php.exe"
+    
 }
