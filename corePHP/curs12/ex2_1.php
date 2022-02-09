@@ -61,7 +61,7 @@ class Copil extends Parinte
     
 }
 $Gigel = new Copil();
-//var_dump($Gigel);
+var_dump($Gigel);
 
 $Gigel->call();
 //Gigel sa acceseze pensia
@@ -70,4 +70,4 @@ $Gigel->call();
 //echo $Gigel->casa;
 
 ////$Ion = new Parinte2();
-//var_dump($Ion);
+// var_dump($Ion);

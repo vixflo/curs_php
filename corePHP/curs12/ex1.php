@@ -15,15 +15,14 @@ class Person {
 
 class User extends Person {
 	/* __construct() este mostenit si se apeleaza automat atat timp
-	
+	cat in clasa copil nu este definit introduce() */
+	# introduce() este mostenita
 
-	cat in clasa copil nu este definit */
-	
 	public function __construct(){
 		parent:: __construct();
-		echo " se executa constuctorul copil;";
+		echo " se executa constuctorul copil<br>";
 	}
-	# introduce() este mostenita
+
 	public function sayHello() {
 		echo "Buna ziua! <br>";
 	}

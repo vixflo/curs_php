@@ -12,9 +12,9 @@ class B extends A {
     // }
 }
 class C extends B {
-    // public function salut(){
-    //     echo "Salut eu sunt din ".__CLASS__;
-    // }
+    public function salut(){
+        echo "Salut eu sunt din ".__CLASS__;
+    }
 }
 
 $b = new B();

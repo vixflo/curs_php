@@ -1,7 +1,8 @@
 <?php
 
 // daca dorim sa blocam ca o clasa sa nu fie mostenita folosim  final
- final class Adunare
+ //final
+  class Adunare
 {
     public function suma($x, $y)
     {

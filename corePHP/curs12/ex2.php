@@ -41,9 +41,9 @@ class B extends A {
 
  $b = new B();
  var_dump($b);
-// echo $b->public; // Public
-// //echo $b->protected; // Fatal error
-// //echo $b->private; // Fatal error
- $b->testVisibilityA(); // Public, Protected, Private
- $b->testVisibilityB(); // // Notice: Undefined, $this->private
-// $b->testVisibilityB_correct(); // Public, Protected,
+// // echo $b->public; // Public
+// // //echo $b->protected; // Fatal error
+// // //echo $b->private; // Fatal error
+//  $b->testVisibilityA(); // Public, Protected, Private
+//  $b->testVisibilityB(); // // Notice: Undefined, $this->private
+// // $b->testVisibilityB_correct(); // Public, Protected,

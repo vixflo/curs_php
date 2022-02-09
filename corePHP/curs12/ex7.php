@@ -5,7 +5,7 @@ class Masina
 {
     public static function model()
     {
-         //self::getModel();
+        // self::getModel();
         static::getModel(); // late static bindings
     }
     protected static function getModel()
@@ -15,12 +15,15 @@ class Masina
 }
 
 Masina::model();
-class Mercedes extends Masina
-{
-    protected static function getModel()
-    {
-        echo "Eu sunt o masina model Mercedes!";
-    }
+// class Mercedes extends Masina
+// {
+//     protected static function getModel()
+//     {
+//         echo "Eu sunt o masina model Mercedes!";
+//     }
+// }
+// $model = new Masina;
+// $model = new Mercedes;
 
-}
- Mercedes::model();
+//  Mercedes::model();
+ // Masina::getModel();
