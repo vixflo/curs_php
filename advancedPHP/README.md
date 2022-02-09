@@ -1,5 +1,5 @@
 
-## Notiuni
+## REVIZUIRE NOTIUNI
 ### A parsa 
 - Împărțiți conținutul unui document în elemente care pot fi identificate.
 ### Bloc de cod 
